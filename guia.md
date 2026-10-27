@@ -1,12 +1,3 @@
-El problema és la ruta absoluta que estàs utilitzant. A l'arrel del teu repositori (on tens el `guia.md`), la carpeta `screenshots` ja hi és directament. Per tant, has d'utilitzar rutes relatives perquè GitHub (o qualsevol visor de Markdown) les pugui trobar.
-
-La ruta correcta ha de ser simplement `screenshots/cX.png` (sense la barra inicial `/` ni el nom del repositori `server-room-horror/` al davant).
-
-A més, he vist a la teva captura de la carpeta que tens un fitxer anomenat `13.png` (sense la "c"). L'he corregit a la guia perquè no et doni error.
-
-Aquí tens la guia corregida amb les rutes adequades:
-
-```markdown
 # 🎃 The Halloween Commit: Horror at the Server Room - Guia de Resolució
 
 Aquesta guia documenta el procés d'anàlisi forense, reconstrucció i exorcisme del repositori infectat `server-room-horror`, seguint la seqüència d'accions de la tasca. L'entorn utilitzat és Windows 11 amb PowerShell i Git.
@@ -185,11 +176,3 @@ A continuació es mostren les captures dels fitxers Markdown creats per a l'audi
 **Bloc 2: Les Branques del Més Enllà i Resolució del Conflicte**
 ![Captura Markdown Bloc 2](screenshots/13.png)
 ```
-
-### Què has de fer ara:
-1. Copia aquest text i enganxa'l al teu fitxer `guia.md`.
-2. Guarda els canvis.
-3. Fes un `git add guia.md` i un `git commit -m "docs: fix image paths in guide"`.
-4. Torna a fer el `git push` perquè els canvis es pugin a GitHub. 
-
-D'aquesta manera, quan obris el `guia.md` des de la pàgina web de GitHub, les imatges es carregaran correctament.
